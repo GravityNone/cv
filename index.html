@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Максим Максимов — Программист и Преподаватель</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <title>Максим Максимов — Fullstack Разработчик</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
     <div class="container">
+      <img src="avatar.jpg" alt="Максим Максимов" class="avatar">
       <h1>Максим Максимов</h1>
-      <p class="subtitle">Программист • Преподаватель • Архитектор цифровых решений</p>
+      <p class="subtitle">Fullstack Разработчик • IoT • Web • Автоматизация</p>
       <a href="#contact" class="btn-primary">Связаться со мной</a>
     </div>
   </header>
@@ -19,67 +20,48 @@
   <section class="about">
     <div class="container">
       <h2>Обо мне</h2>
-      <p>Привет! Я — Максим, разработчик с инженерным мышлением и преподавательским сердцем. Окончил университет имени Ф. Скорины и уже более 5 лет создаю эффективные цифровые решения: от микроконтроллеров до веб-приложений. Обожаю делиться знаниями, учить простому языку сложные технологии и строить мосты между железом и человеком. Мой стиль — чистый код, UX с человеческим лицом и реальный результат.</p>
+      <p>Я — разработчик, создающий практичные и стильные цифровые решения: от web-интерфейсов и API до микроконтроллеров и IoT-сетей. Постоянно улучшаю свои навыки, автоматизирую всё, что можно, и люблю доводить проекты до совершенства.</p>
     </div>
   </section>
 
   <section class="skills">
     <div class="container">
-      <h2>Ключевые навыки</h2>
+      <h2>Навыки</h2>
       <div class="skill-tags">
         <span>HTML5</span><span>CSS3 / SCSS</span><span>JavaScript (ES6+)</span>
-        <span>Python (Flask, FastAPI)</span><span>PHP (Laravel)</span><span>Java (Spring)</span>
-        <span>MySQL / PostgreSQL</span><span>Git / GitHub</span><span>Linux / Bash</span>
-        <span>ESP32 / Arduino</span><span>OpenCV</span><span>REST API</span>
-        <span>UI/UX</span><span>Responsive Design</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="experience">
-    <div class="container">
-      <h2>Опыт работы</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Преподаватель программирования</h3>
-          <p class="timeline-date">2022 — настоящее время</p>
-          <p>Обучаю студентов фронтенду, backend'у и микроконтроллерам. Разрабатываю учебные курсы с практическими проектами: от ботов до систем умного дома.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Фриланс-разработчик</h3>
-          <p class="timeline-date">2019 — 2022</p>
-          <p>Выполнил более 30 заказов: сайты, Telegram-боты, микроконтроллерные системы, админки, API. Сотрудничал с малым бизнесом, стартапами и коллегами-преподавателями.</p>
-        </div>
+        <span>Python (Flask)</span><span>PHP</span><span>Java</span>
+        <span>MySQL / PostgreSQL</span><span>Git / Linux</span><span>ESP32</span>
+        <span>Raspberry Pi</span><span>OpenCV</span><span>Telegram Bot API</span>
+        <span>Яндекс Алиса</span><span>REST API</span><span>UI/UX</span>
       </div>
     </div>
   </section>
 
   <section class="projects">
     <div class="container">
-      <h2>Избранные проекты</h2>
+      <h2>Проекты</h2>
       <div class="project-grid">
         <div class="project">
-          <h3>Умный дом на ESP32</h3>
-          <p>Полноценная система управления светом, шторами и датчиками через Flask + Яндекс Алиса + Telegram.</p>
+          <h3>Умный дом с поддержкой Алисы</h3>
+          <p>Создание веб-интерфейса и backend'а для управления устройствами умного дома с интеграцией Яндекс Алисы, ESP32, базы данных и Telegram-бота.</p>
         </div>
         <div class="project">
           <h3>Система распознавания лиц</h3>
-          <p>Реализована на Raspberry Pi с камерой и OpenCV. Веб-интерфейс + API для логов. Идеально подходит для офиса и дома.</p>
+          <p>Программа на Python + OpenCV для Raspberry Pi, которая определяет лица в реальном времени и синхронизируется с системой «умного дома».</p>
         </div>
         <div class="project">
-          <h3>Панель задач преподавателя</h3>
-          <p>Система учёта задач для студентов через Telegram-бота и веб-панель. Возможность контролировать выполнение в реальном времени.</p>
+          <h3>RFID-система присутствия</h3>
+          <p>ESP32 + RFID + база данных. Система регистрации приходов/уходов с отображением в веб-интерфейсе и уведомлениями в Telegram.</p>
+        </div>
+        <div class="project">
+          <h3>Графики и отчёты по устройствам</h3>
+          <p>Сбор и визуализация данных с устройств в виде графиков, адаптивная панель управления с аналитикой и фильтрацией по типам устройств.</p>
+        </div>
+        <div class="project">
+          <h3>Включение ПК через Wake-on-LAN</h3>
+          <p>ESP32 и Raspberry Pi взаимодействуют с роутером и сетевыми адаптерами, чтобы включать ноутбук Asus через Алису и Flask-сервер.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="quote">
-    <div class="container">
-      <blockquote>
-        "Максим вдохновляет. С ним легко учиться и трудно не увлечься IT."
-        <cite>— Студент, курс Python</cite>
-      </blockquote>
     </div>
   </section>
 
@@ -98,5 +80,23 @@
       <p>&copy; 2025 Максим Максимов. Сделано с умом, душой и немного кофе ☕</p>
     </div>
   </footer>
+
+  <script>
+    // Приветствие в консоли
+    console.log("Добро пожаловать в портфолио Максима Максимова");
+
+    // Простая анимация появления при прокрутке
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll("section").forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
