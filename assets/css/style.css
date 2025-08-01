@@ -1,0 +1,153 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  background: linear-gradient(120deg, #3b82f6, #6366f1);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom-left-radius: 80px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: white;
+  color: #3b82f6;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  color: #1d4ed8;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tags span {
+  background: #eff6ff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.timeline {
+  border-left: 3px solid #3b82f6;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #e0f2fe;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  background: #bae6fd;
+}
+
+.quote blockquote {
+  font-style: italic;
+  border-left: 5px solid #3b82f6;
+  padding-left: 15px;
+  margin: 0;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+footer {
+  background: #1e293b;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+  border-top-right-radius: 40px;
+}
+
+.download {
+  display: inline-block;
+  margin-top: 20px;
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download:hover {
+  background: #1d4ed8;
+}
