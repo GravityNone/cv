@@ -1,187 +1,102 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-
-    <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--====== Title ======-->
-    <title>Profile 1</title>
-
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
-
-    <!--====== Slick css ======-->
-    <link rel="stylesheet" href="assets/css/cb-slider.css">
-    
-    <!--====== Animate css ======-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Максим Максимов — Программист и Преподаватель</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    
-    <!--====== PRELOADER PART START ======-->
-
-    <div class="preloader">
-        <div class="loader_34">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <header class="hero">
+    <div class="container">
+      <h1>Максим Максимов</h1>
+      <p class="subtitle">Программист • Преподаватель • Архитектор цифровых решений</p>
+      <a href="#contact" class="btn-primary">Связаться со мной</a>
     </div>
+  </header>
 
-    <!--====== PRELOADER ENDS START ======-->
-
-    <!--====== HEADER PART START ======-->
-
-    <header class="header-area">
-        <ul class="cb-slideshow">
-            <li><span>Image 01</span></li>
-            <li><span>Image 02</span></li>
-            <li><span>Image 03</span></li>
-            <li><span>Image 04</span></li>
-            <li><span>Image 05</span></li>
-            <li><span>Image 06</span></li>
-        </ul>
-        <div class="header-card" >
-            <div class="header-card-wrapper wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
-                <div class="card-header bg_cover" style="background-image: url(assets/images/card-bg.jpg)"></div> <!-- card-header -->
-                <div class="card-profile">
-                    <img src="assets/images/profile.jpg" alt="Profile">
-                </div> <!-- card-profile -->
-                <div class="card-content text-center">
-                    <h3 class="card-title">Daryl Dixon</h3>
-                    <p class="text">Lorem ipsum dolor sit amet, sed magna etiam adipiscing elit. Mauris id elit tempor, dolor sed curabitur id justo congue, facilisis sem justo. Integer ut facilisis turpis. Praesent amet ullamcorper ante nec ipsum dolor.</p>
-                    <a href="#" class="main-btn" data-toggle="modal" data-target="#contact-modal">Get In Touch</a>
-                </div> <!-- card-content -->
-                <div class="card-social text-center">
-                    <ul>
-                        <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                        <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                        <li><a href="#"><i class="lni-instagram-original"></i></a></li>
-                        <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                    </ul>
-                    <p style="
-    font-size: 10px;
-">Template Crafted by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
-                </div> <!-- card-social -->
-            </div> <!-- header-card -->
-        </div> <!-- header-card -->
-    </header>
-
-    <!--====== HEADER PART ENDS ======-->
-
-    <!--====== MODAL CONTACT PART ENDS ======-->
-
-    <!-- Modal -->
-    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="lni-close"></i>
-                </button>
-                
-                <div class="modal-body">
-                    <div class="section-title text-center pb-20">
-                        <h5 class="sub-title mb-15">Available for Projects</h5>
-                        <h2 class="title">Contact Me</h2>
-                    </div> <!-- section title -->
-                    <div class="contact-form">
-                        <form id="contact-form" action="assets/contact.php" method="post" data-toggle="validator">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="single-form form-group">
-                                        <input type="text" name="name" placeholder="Your Name" data-error="Name is required." required="required">
-                                        <div class="help-block with-errors"></div>
-                                    </div> <!-- single form -->
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="single-form form-group">
-                                        <input type="email" name="email" placeholder="Your Email" data-error="Valid email is required." required="required">
-                                        <div class="help-block with-errors"></div>
-                                    </div> <!-- single form -->
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="single-form form-group">
-                                        <input type="text" name="subject" placeholder="Subject" data-error="Subject is required." required="required">
-                                        <div class="help-block with-errors"></div>
-                                    </div> <!-- single form -->
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="single-form form-group">
-                                        <input type="text" name="phone" placeholder="Phone" data-error="Phone is required." required="required">
-                                        <div class="help-block with-errors"></div>
-                                    </div> <!-- single form -->
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="single-form form-group">
-                                        <textarea placeholder="Your Mesaage" name="message" data-error="Please,leave us a message." required="required"></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div> <!-- single form -->
-                                </div>
-                                <p class="form-message"></p>
-                                <div class="col-md-12">
-                                    <div class="single-form form-group text-center">
-                                        <button type="submit" class="main-btn">Send Message</button>
-                                    </div> <!-- single form -->
-                                </div>
-                            </div> <!-- row -->
-                        </form>
-                    </div> <!-- contact form -->
-                </div>
-            </div>
-        </div>
+  <section class="about">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <p>Привет! Я — Максим, разработчик с инженерным мышлением и преподавательским сердцем. Окончил университет имени Ф. Скорины и уже более 5 лет создаю эффективные цифровые решения: от микроконтроллеров до веб-приложений. Обожаю делиться знаниями, учить простому языку сложные технологии и строить мосты между железом и человеком. Мой стиль — чистый код, UX с человеческим лицом и реальный результат.</p>
     </div>
+  </section>
 
-    <!--====== MODAL CONTACT PART ENDS ======-->
+  <section class="skills">
+    <div class="container">
+      <h2>Ключевые навыки</h2>
+      <div class="skill-tags">
+        <span>HTML5</span><span>CSS3 / SCSS</span><span>JavaScript (ES6+)</span>
+        <span>Python (Flask, FastAPI)</span><span>PHP (Laravel)</span><span>Java (Spring)</span>
+        <span>MySQL / PostgreSQL</span><span>Git / GitHub</span><span>Linux / Bash</span>
+        <span>ESP32 / Arduino</span><span>OpenCV</span><span>REST API</span>
+        <span>UI/UX</span><span>Responsive Design</span>
+      </div>
+    </div>
+  </section>
 
+  <section class="experience">
+    <div class="container">
+      <h2>Опыт работы</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Преподаватель программирования</h3>
+          <p class="timeline-date">2022 — настоящее время</p>
+          <p>Обучаю студентов фронтенду, backend'у и микроконтроллерам. Разрабатываю учебные курсы с практическими проектами: от ботов до систем умного дома.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Фриланс-разработчик</h3>
+          <p class="timeline-date">2019 — 2022</p>
+          <p>Выполнил более 30 заказов: сайты, Telegram-боты, микроконтроллерные системы, админки, API. Сотрудничал с малым бизнесом, стартапами и коллегами-преподавателями.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="projects">
+    <div class="container">
+      <h2>Избранные проекты</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>Умный дом на ESP32</h3>
+          <p>Полноценная система управления светом, шторами и датчиками через Flask + Яндекс Алиса + Telegram.</p>
+        </div>
+        <div class="project">
+          <h3>Система распознавания лиц</h3>
+          <p>Реализована на Raspberry Pi с камерой и OpenCV. Веб-интерфейс + API для логов. Идеально подходит для офиса и дома.</p>
+        </div>
+        <div class="project">
+          <h3>Панель задач преподавателя</h3>
+          <p>Система учёта задач для студентов через Telegram-бота и веб-панель. Возможность контролировать выполнение в реальном времени.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <section class="quote">
+    <div class="container">
+      <blockquote>
+        "Максим вдохновляет. С ним легко учиться и трудно не увлечься IT."
+        <cite>— Студент, курс Python</cite>
+      </blockquote>
+    </div>
+  </section>
 
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Контакты</h2>
+      <p>Email: <a href="mailto:max.dev@example.com">max.dev@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p>Telegram: <a href="https://t.me/yourhandle" target="_blank">@yourhandle</a></p>
+      <a class="btn-primary download" href="cv.pdf" download>Скачать резюме (PDF)</a>
+    </div>
+  </section>
 
-    <!--====== Slick js ======-->
-    <script src="assets/js/slick.min.js"></script>
-
-
-    <!--====== WOW js ======-->
-    <script src="assets/js/wow.min.js"></script>
-
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Максим Максимов. Сделано с умом, душой и немного кофе ☕</p>
+    </div>
+  </footer>
 </body>
-
 </html>
