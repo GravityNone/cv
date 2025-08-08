@@ -1,102 +1,256 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Максим Максимов — Fullstack Разработчик</title>
-  <link rel="stylesheet" href="/assets/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Максим Максимов — Портфолио</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="hero">
+  <header>
     <div class="container">
-      <img src="avatar.jpg" alt="Максим Максимов" class="avatar">
-      <h1>Максим Максимов</h1>
-      <p class="subtitle">Fullstack Разработчик • IoT • Web • Автоматизация</p>
-      <a href="#contact" class="btn-primary">Связаться со мной</a>
+      <div class="profile">
+        <img src="assets/images/myphoto.jpg" alt="Максим Максимов" class="avatar" />
+        <div>
+          <h1>Максим Максимов</h1>
+          <h2><span id="typed"></span></h2>
+        </div>
+      </div>
     </div>
+<section id="skills" class="py-12 bg-white dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-white">Мои навыки</h2>
+    <div class="skills-carousel-wrapper relative overflow-hidden">
+      <div class="skills-carousel flex gap-6">
+        <!-- Повторение навыков для бесконечного скролла -->
+        <div class="skill-card">HTML
+            <div class="skill-progress"><div style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-card">CSS
+            <div class="skill-progress"><div style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-card">JavaScript
+<div class="skill-progress"><div style="width: 70%;"></div></div>
+        </div>
+        <div class="skill-card">Python
+<div class="skill-progress"><div style="width: 80%;"></div></div>
+        </div>
+        <div class="skill-card">PHP
+<div class="skill-progress"><div style="width: 70%;"></div></div>
+        </div>
+        <div class="skill-card">MySQL
+<div class="skill-progress"><div style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-card">Flask
+<div class="skill-progress"><div style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-card">ESP32
+<div class="skill-progress"><div style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-card">Raspberry Pi
+<div class="skill-progress"><div style="width: 75%;"></div></div>
+        </div>
+        <div class="skill-card">OpenCV
+<div class="skill-progress"><div style="width: 82%;"></div></div>
+        </div>
+        <!-- Повтор для зацикливания -->
+        <div class="skill-card">HTML
+<div class="skill-progress"><div style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-card">CSS
+<div class="skill-progress"><div style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-card">JavaScript
+<div class="skill-progress"><div style="width: 70%;"></div></div>
+        </div>
+        <div class="skill-card">Python
+<div class="skill-progress"><div style="width: 80%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
   </header>
 
   <section class="about">
     <div class="container">
-      <h2>Обо мне</h2>
-      <p>Я — разработчик, создающий практичные и стильные цифровые решения: от web-интерфейсов и API до микроконтроллеров и IoT-сетей. Постоянно улучшаю свои навыки, автоматизирую всё, что можно, и люблю доводить проекты до совершенства.</p>
-    </div>
-  </section>
-
-  <section class="skills">
-    <div class="container">
-      <h2>Навыки</h2>
-      <div class="skill-tags">
-        <span>HTML5</span><span>CSS3 / SCSS</span><span>JavaScript (ES6+)</span>
-        <span>Python (Flask)</span><span>PHP</span><span>Java</span>
-        <span>MySQL / PostgreSQL</span><span>Git / Linux</span><span>ESP32</span>
-        <span>Raspberry Pi</span><span>OpenCV</span><span>Telegram Bot API</span>
-        <span>Яндекс Алиса</span><span>REST API</span><span>UI/UX</span>
-      </div>
+      <h3>Обо мне</h3>
+      <p>Я — full-stack разработчик, закончил университет имени Ф. Скорины. Занимаюсь созданием web-приложений, систем «Умный дом», работаю с микроконтроллерами, а также автоматизирую задачи с использованием Python и Telegram-ботов.</p>
     </div>
   </section>
 
   <section class="projects">
     <div class="container">
-      <h2>Проекты</h2>
-      <div class="project-grid">
-        <div class="project">
-          <h3>Умный дом с поддержкой Алисы</h3>
-          <p>Создание веб-интерфейса и backend'а для управления устройствами умного дома с интеграцией Яндекс Алисы, ESP32, базы данных и Telegram-бота.</p>
+      <h3>Домашние проекты</h3>
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="project-card">
+          <div class="video-container">
+            <video class="project-video" autoplay loop muted playsinline>
+              <source src="assets/videos/stark.mp4" type="video/mp4">
+            </video>
+            <button class="video-sound-btn" aria-label="Включить звук">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+          </div>
+            <h4 style="text-align: center;">Проект: Голосовой помощник "Тони Старк"</h4>
+            <p>Умная система управления компьютером и RGB-лентами через голосовые команды. Реализована на ESP32/Arduino с интеграцией в Windows и Python-сервер</p>
+          </div>
+          <div class="project-card">
+          <div class="video-container">
+            <video class="project-video" loop muted>
+              <source src="videos/smart-home-panel.mp4" type="video/mp4">
+            </video>
+            <button class="video-sound-btn" aria-label="Включить звук">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+          </div>
+            <h4>Проект: Умный дом</h4>
+            <p>Система отслеживания присутствия с RFID и ESP32, управление через Telegram-бота, статус «дома/не дома» для каждого пользователя.</p>
+          </div>
+          <div class="project-card">
+          <div class="video-container">
+            <video class="project-video" loop muted>
+              <source src="videos/smart-home-panel.mp4" type="video/mp4">
+            </video>
+            <button class="video-sound-btn" aria-label="Включить звук">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+          </div>
+            <h4>Распознавание лиц</h4>
+            <p>Интеграция OpenCV на Raspberry Pi 5, автоматическое реагирование системы на известных пользователей.</p>
+          </div>
         </div>
-        <div class="project">
-          <h3>Система распознавания лиц</h3>
-          <p>Программа на Python + OpenCV для Raspberry Pi, которая определяет лица в реальном времени и синхронизируется с системой «умного дома».</p>
-        </div>
-        <div class="project">
-          <h3>RFID-система присутствия</h3>
-          <p>ESP32 + RFID + база данных. Система регистрации приходов/уходов с отображением в веб-интерфейсе и уведомлениями в Telegram.</p>
-        </div>
-        <div class="project">
-          <h3>Графики и отчёты по устройствам</h3>
-          <p>Сбор и визуализация данных с устройств в виде графиков, адаптивная панель управления с аналитикой и фильтрацией по типам устройств.</p>
-        </div>
-        <div class="project">
-          <h3>Включение ПК через Wake-on-LAN</h3>
-          <p>ESP32 и Raspberry Pi взаимодействуют с роутером и сетевыми адаптерами, чтобы включать ноутбук Asus через Алису и Flask-сервер.</p>
-        </div>
+        <button class="carousel-btn prev">‹</button>
+        <button class="carousel-btn next">›</button>
       </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contacts">
     <div class="container">
-      <h2>Контакты</h2>
-      <p>Email: <a href="mailto:max.dev@example.com">max.dev@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-      <p>Telegram: <a href="https://t.me/yourhandle" target="_blank">@yourhandle</a></p>
-      <a class="btn-primary download" href="cv.pdf" download>Скачать резюме (PDF)</a>
+      <h3>Контакты</h3>
+      <ul>
+        <li>GitHub: <a href="https://github.com/GravityNone" target="_blank">github.com/GravityNone</a></li>
+        <li>Telegram: <a href="https://t.me/chief_keef228" target="_blank">@chief_keef228</a></li>
+      </ul>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Максим Максимов. Сделано с умом, душой и немного кофе ☕</p>
+      <p>© 2025 Максим Максимов. Все права защищены.</p>
     </div>
   </footer>
 
+<!-- Подсказка -->
+<div id="skill-tooltip" style="position:absolute; background:#333; color:#fff; padding:8px 12px; border-radius:6px; font-size:14px; max-width:250px; display:none; pointer-events:none; z-index:1000;"></div>
+
+<div id="skill-tooltip" style="
+  position:absolute;
+  background:#222;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:6px;
+  font-size:14px;
+  max-width:250px;
+  display:none;
+  pointer-events:none;
+  z-index:10000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+"></div>
+
+<script>
+    const skillsCarousel = document.querySelector('.skills-carousel');
+const tooltip = document.getElementById('skill-tooltip');
+
+skillsCarousel.querySelectorAll('.skill-card').forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    // Остановить анимацию
+    skillsCarousel.classList.add('paused');
+
+    // Показать подсказку с текстом из data-description
+    tooltip.textContent = card.getAttribute('data-description') || '';
+    tooltip.style.display = 'block';
+  });
+
+  card.addEventListener('mousemove', e => {
+    // Позиционирование подсказки с небольшим отступом от курсора
+    const offset = 15;
+    let left = e.clientX + offset;
+    let top = e.clientY + offset;
+
+    // Чтобы подсказка не выходила за правый край окна
+    if (left + tooltip.offsetWidth > window.innerWidth) {
+      left = e.clientX - tooltip.offsetWidth - offset;
+    }
+    // Чтобы подсказка не выходила за нижний край окна
+    if (top + tooltip.offsetHeight > window.innerHeight) {
+      top = e.clientY - tooltip.offsetHeight - offset;
+    }
+
+    tooltip.style.left = left + 'px';
+    tooltip.style.top = top + 'px';
+  });
+
+  card.addEventListener('mouseleave', () => {
+    // Скрыть подсказку
+    tooltip.style.display = 'none';
+
+    // Запустить анимацию снова
+    skillsCarousel.classList.remove('paused');
+  });
+});
+
+</script>
   <script>
-    // Приветствие в консоли
-    console.log("Добро пожаловать в портфолио Максима Максимова");
 
-    // Простая анимация появления при прокрутке
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in");
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll("section").forEach(section => {
-      observer.observe(section);
+    new Typed('#typed', {
+      strings: ['Full-stack разработчик', 'Создатель IoT-проектов', 'Веб-разработчик', 'Python & JS Enthusiast'],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
     });
+
+    // Карусель
+    const track = document.querySelector('.carousel-track');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+
+    let index = 0;
+
+    nextBtn.addEventListener('click', () => {
+      if (index < track.children.length - 1) index++;
+      else index = 0;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (index > 0) index--;
+      else index = track.children.length - 1;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    });
+  </script>
+  <script type="text/javascript">
+      document.querySelectorAll('.video-sound-btn').forEach(btn => {
+  const video = btn.closest('.video-container').querySelector('video');
+  
+  btn.addEventListener('click', () => {
+    video.muted = !video.muted;
+    btn.innerHTML = video.muted 
+      ? '<i class="fas fa-volume-mute"></i>' 
+      : '<i class="fas fa-volume-up"></i>';
+    btn.setAttribute('aria-label', video.muted ? 'Включить звук' : 'Выключить звук');
+  });
+});
   </script>
 </body>
 </html>
