@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Максим Филиппов — Портфолио</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="profile">
+        <img src="assets/images/myphoto.jpg" alt="Максим Филиппов" class="avatar" />
+        <div>
+          <h1>Максим Филиппов</h1>
+          <h2><span id="typed"></span></h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- О себе -->
+  <section class="about">
+    <div class="container">
+      <h3>Обо мне</h3>
+      <p>
+        Я — full-stack разработчик с опытом в <b>веб-разработке, IoT и автоматизации</b>. 
+        Закончил университет имени Ф. Скорины. Умею создавать современные веб-приложения, 
+        интегрировать системы «Умный дом», работать с микроконтроллерами и AI-технологиями.  
+        Моя цель — разрабатывать проекты, которые упрощают жизнь и приносят реальную ценность.
+      </p>
+    </div>
+  </section>
+
+  <!-- Навыки -->
+  <section id="skills" class="py-12 bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-white">Мои навыки</h2>
+      <div class="skills-carousel-wrapper relative overflow-hidden">
+        <div class="skills-carousel flex gap-6">
+          <div class="skill-card" data-description="Разработка адаптивных веб-страниц">HTML
+            <div class="skill-progress"><div style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-card" data-description="Современные интерфейсы с анимациями">CSS
+            <div class="skill-progress"><div style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-card" data-description="Frontend, SPA и интерактив">JavaScript
+            <div class="skill-progress"><div style="width: 75%;"></div></div>
+          </div>
+          <div class="skill-card" data-description="Backend, скрипты, боты, автоматизация">Python
+            <div class="skill-progress"><div style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-card" data-description="Серверная логика и CMS">PHP
+            <div class="skill-progress"><div style="width: 70%;"></div></div>
+          </div>
+          <div class="skill-card" data-description="Проектирование и работа с БД">MySQL
+            <div class="skill-progress"><div style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-card" data-description="API и веб-сервисы">Flask
+            <div class="skill-progress"><div style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-card" data-description="IoT проекты, управление устройствами">ESP32
+            <div class="skill-progress"><div style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-card" data-description="Автоматизация и IoT сервер">Raspberry Pi
+            <div class="skill-progress"><div style="width: 75%;"></div></div>
+          </div>
+          <div class="skill-card" data-description="Компьютерное зрение и AI">OpenCV
+            <div class="skill-progress"><div style="width: 80%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Опыт и образование -->
+<section class="experience">
+    <div class="container">
+        <h3>Опыт и образование</h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2018-...</div>
+                <div class="timeline-content">
+                    <h4>Преподаватель\Промоутер | RCode</h4>
+                    <p>Обучение детей и подростков digital-навыкам в ведущей IT-школе. Разработка образовательных программ и менторство.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2025</div>
+                <div class="timeline-content">
+                    <h4>Университет имени Ф. Скорины</h4>
+                    <p>Факультет прикладной математики и физики. Углубленное изучение алгоритмов, мат.моделирования и AI.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2019</div>
+                <div class="timeline-content">
+                    <h4>Торгово-Экономический колледж</h4>
+                    <p>Специальность "Программное обеспечение информационных технологий". Базовое техническое образование.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2017-2018</div>
+                <div class="timeline-content">
+                    <h4>Веб-разработчик | Фриланс</h4>
+                    <p>Коммерческая разработка и поддержка сайтов. Первые шаги в IT и веб-разработке.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Проекты -->
+  <section class="projects">
+    <div class="container">
+      <h3>Мои проекты</h3>
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="project-card">
+            <div class="video-container">
+              <div class="youtube-wrapper">
+                <iframe 
+                  src="https://www.youtube.com/embed/NvbaxrECrS0?autoplay=1&mute=1&loop=1ч" 
+                  title="Голосовой помощник Тони Старк"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+            <h4>Голосовой помощник "Тони Старк"</h4>
+            <p>Система управления компьютером и устройствами через голосовые команды. Интеграция ESP32 + Python. Распознавание речи, автоматизация задач, управление умным домом.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">С++</span>
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">Speech Recognition</span>
+              <span class="tech-tag">IoT</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="video-container">
+              <div class="youtube-wrapper">
+                <iframe 
+                  src="https://www.youtube.com/embed/RB4o8fXBtw8?autoplay=1&mute=1&loop=1" 
+                  title="Система Умный дом - демонстрация"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+            <h4>Умный дом GuardianHome</h4>
+            <p>Комплексная система умного дома с RFID доступом, распознаванием лиц через OpenCV и Telegram-ботом для управления. Отслеживание статуса пользователей в реальном времени.</p>
+            <div class="project-tech">
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">С++</span>
+              <span class="tech-tag">Dock</span>
+              <span class="tech-tag">Raspery PI 5</span>
+              <span class="tech-tag">cloudflare</span>
+              <span class="tech-tag">Telegram Bot</span>
+              <span class="tech-tag">RFID</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </div>
+            <div class="project-card">
+            <div class="video-container">
+              <div class="youtube-wrapper">
+                <iframe 
+                  src="https://www.youtube.com/embed/0sjugniwaKg?autoplay=1&mute=1&loop=1" 
+                  title="Site JayRay"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+            <h4>Сайт с ЛК для игрового проекта JayRay</h4>
+            <p>Разработка сайта с личным кабинетом с эквайрингом для игры SA:MP</p>
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JS</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="video-container">
+              <div class="youtube-wrapper">
+                <iframe 
+                  src="https://www.youtube.com/embed/PTQa4s1TOl0?autoplay=1&mute=1&loop=1" 
+                  title="Flappa bird c# Unity"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+            <h4>Floppa Bird</h4>
+            <p>Аналог игры Flappy Bird сделанной в Unity на ЯП c#</p>
+            <div class="project-tech">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev">‹</button>
+        <button class="carousel-btn next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="contacts">
+    <div class="container">
+      <h3>Контакты</h3>
+      <ul>
+        <li>Email: <a href="mailto:maxim.dev@example.com">maxim.dev@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/GravityNone" target="_blank">github.com/GravityNone</a></li>
+        <li>Telegram: <a href="https://t.me/chief_keef228" target="_blank">@chief_keef228</a></li>
+        <li>LinkedIn: <a href="#" target="_blank">linkedin.com/in/maxim-maximov</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Максим Максимов. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    new Typed('#typed', {
+      strings: ['Full-stack разработчик', 'Создатель IoT-проектов', 'Веб-разработчик', 'Python & JS Enthusiast'],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+  </script>
+  <script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const nextBtn = document.querySelector('.carousel-btn.next');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  let index = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
+</script>
+<script>
+document.querySelectorAll('.video-container').forEach(container => {
+  const video = container.querySelector('video');
+  const btn = container.querySelector('.video-sound-btn');
+
+  btn.addEventListener('click', () => {
+    if (video.muted) {
+      video.muted = false;
+      video.play(); // принудительный запуск со звуком
+      btn.innerHTML = '<i class="fas fa-volume-up"></i>';
+      btn.setAttribute('aria-label', 'Выключить звук');
+    } else {
+      video.muted = true;
+      btn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+      btn.setAttribute('aria-label', 'Включить звук');
+    }
+  });
+});
+</script>
+</body>
+</html>
