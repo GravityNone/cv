@@ -3,306 +3,372 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Максим Филиппов — Портфолио</title>
+  <title>Максим Филиппов — Full-stack / IoT разработчик</title>
+  <meta name="description" content="Портфолио Максима Филиппова: full-stack разработка, IoT и автоматизация умного дома, преподавание digital-навыков." />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
+
+  <nav class="site-nav" id="siteNav">
     <div class="container">
-      <div class="profile">
-        <img src="assets/images/myphoto.jpg" alt="Максим Филиппов" class="avatar" />
-        <div>
-          <h1>Максим Филиппов</h1>
-          <h2><span id="typed"></span></h2>
+      <a href="#" class="nav-logo">M<span>.</span>F</a>
+      <ul class="nav-links">
+        <li><a href="#about">обо мне</a></li>
+        <li><a href="#skills">навыки</a></li>
+        <li><a href="#experience">опыт</a></li>
+        <li><a href="#projects">проекты</a></li>
+        <li><a href="#contacts">контакты</a></li>
+      </ul>
+      <a href="#contacts" class="nav-cta">связаться</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="eyebrow">портфолио разработчика</span>
+        <h1 class="hero-name">Максим Филиппов</h1>
+        <div class="hero-role"><span id="typed"></span></div>
+        <p class="hero-pitch">
+          Собираю продукты на стыке веба и железа: от адаптивных сайтов и Telegram-ботов
+          до систем «Умного дома» на ESP32 с распознаванием лиц. Учу этому же digital-школу.
+        </p>
+        <div class="hero-actions">
+          <a href="https://t.me/chief_keef228" target="_blank" class="btn btn-primary">
+            <i class="fab fa-telegram"></i> Написать в Telegram
+          </a>
+          <a href="https://github.com/GravityNone" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
+        <div class="hero-stats">
+          <div><strong>8+</strong><span>лет в разработке</span></div>
+          <div><strong>5</strong><span>проектов в портфолио</span></div>
+          <div><strong>10</strong><span>технологий в стеке</span></div>
+        </div>
+      </div>
+      <div class="hero-frame">
+        <div class="plate">
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <img src="assets/images/myphoto.jpg" alt="Максим Филиппов" />
+        </div>
+        <span class="tag">status: open to work</span>
       </div>
     </div>
   </header>
 
   <!-- О себе -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
-      <h3>Обо мне</h3>
+      <span class="eyebrow">01. обо мне</span>
+      <h2 style="margin-bottom:1.25rem;">Кто я</h2>
       <p>
-        Я — full-stack разработчик с опытом в <b>веб-разработке, IoT и автоматизации</b>. 
-        Закончил университет имени Ф. Скорины. Умею создавать современные веб-приложения, 
-        интегрировать системы «Умный дом», работать с микроконтроллерами и AI-технологиями.  
-        Моя цель — разрабатывать проекты, которые упрощают жизнь и приносят реальную ценность.
+        Я — <b>full-stack разработчик</b> с опытом в <b>веб-разработке, IoT и автоматизации</b>.
+        Окончил факультет прикладной математики и физики университета имени Ф. Скорины.
+        Умею создавать современные веб-приложения, интегрировать системы «Умный дом»,
+        работать с микроконтроллерами и AI-технологиями. Моя цель — разрабатывать проекты,
+        которые упрощают жизнь и приносят реальную ценность.
       </p>
     </div>
   </section>
 
   <!-- Навыки -->
-  <section id="skills" class="py-12 bg-white dark:bg-gray-900">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-white">Мои навыки</h2>
-      <div class="skills-carousel-wrapper relative overflow-hidden">
-        <div class="skills-carousel flex gap-6">
-          <div class="skill-card" data-description="Разработка адаптивных веб-страниц">HTML
-            <div class="skill-progress"><div style="width: 90%;"></div></div>
-          </div>
-          <div class="skill-card" data-description="Современные интерфейсы с анимациями">CSS
-            <div class="skill-progress"><div style="width: 90%;"></div></div>
-          </div>
-          <div class="skill-card" data-description="Frontend, SPA и интерактив">JavaScript
-            <div class="skill-progress"><div style="width: 75%;"></div></div>
-          </div>
-          <div class="skill-card" data-description="Backend, скрипты, боты, автоматизация">Python
-            <div class="skill-progress"><div style="width: 85%;"></div></div>
-          </div>
-          <div class="skill-card" data-description="Серверная логика и CMS">PHP
-            <div class="skill-progress"><div style="width: 70%;"></div></div>
-          </div>
-          <div class="skill-card" data-description="Проектирование и работа с БД">MySQL
-            <div class="skill-progress"><div style="width: 85%;"></div></div>
-          </div>
-          <div class="skill-card" data-description="API и веб-сервисы">Flask
-            <div class="skill-progress"><div style="width: 85%;"></div></div>
-          </div>
-          <div class="skill-card" data-description="IoT проекты, управление устройствами">ESP32
-            <div class="skill-progress"><div style="width: 90%;"></div></div>
-          </div>
-          <div class="skill-card" data-description="Автоматизация и IoT сервер">Raspberry Pi
-            <div class="skill-progress"><div style="width: 75%;"></div></div>
-          </div>
-          <div class="skill-card" data-description="Компьютерное зрение и AI">OpenCV
-            <div class="skill-progress"><div style="width: 80%;"></div></div>
-          </div>
+  <section id="skills">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">02. стек</span>
+        <h2>Мои навыки</h2>
+        <p>Веб, данные и железо — то, с чем я работаю каждый день.</p>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skill-card" data-level="90">
+          <div class="skill-top"><span class="skill-name">HTML</span><span class="skill-pct">90%</span></div>
+          <p class="skill-desc">Разработка адаптивных веб-страниц</p>
+          <div class="meter"></div>
+        </div>
+        <div class="skill-card" data-level="90">
+          <div class="skill-top"><span class="skill-name">CSS</span><span class="skill-pct">90%</span></div>
+          <p class="skill-desc">Современные интерфейсы с анимациями</p>
+          <div class="meter"></div>
+        </div>
+        <div class="skill-card" data-level="75">
+          <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">75%</span></div>
+          <p class="skill-desc">Frontend, SPA и интерактив</p>
+          <div class="meter"></div>
+        </div>
+        <div class="skill-card" data-level="85">
+          <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">85%</span></div>
+          <p class="skill-desc">Backend, скрипты, боты, автоматизация</p>
+          <div class="meter"></div>
+        </div>
+        <div class="skill-card" data-level="70">
+          <div class="skill-top"><span class="skill-name">PHP</span><span class="skill-pct">70%</span></div>
+          <p class="skill-desc">Серверная логика и CMS</p>
+          <div class="meter"></div>
+        </div>
+        <div class="skill-card" data-level="85">
+          <div class="skill-top"><span class="skill-name">MySQL</span><span class="skill-pct">85%</span></div>
+          <p class="skill-desc">Проектирование и работа с БД</p>
+          <div class="meter"></div>
+        </div>
+        <div class="skill-card" data-level="85">
+          <div class="skill-top"><span class="skill-name">Flask</span><span class="skill-pct">85%</span></div>
+          <p class="skill-desc">API и веб-сервисы</p>
+          <div class="meter"></div>
+        </div>
+        <div class="skill-card" data-level="90">
+          <div class="skill-top"><span class="skill-name">ESP32</span><span class="skill-pct">90%</span></div>
+          <p class="skill-desc">IoT-проекты, управление устройствами</p>
+          <div class="meter"></div>
+        </div>
+        <div class="skill-card" data-level="75">
+          <div class="skill-top"><span class="skill-name">Raspberry Pi</span><span class="skill-pct">75%</span></div>
+          <p class="skill-desc">Автоматизация и IoT-сервер</p>
+          <div class="meter"></div>
+        </div>
+        <div class="skill-card" data-level="80">
+          <div class="skill-top"><span class="skill-name">OpenCV</span><span class="skill-pct">80%</span></div>
+          <p class="skill-desc">Компьютерное зрение и AI</p>
+          <div class="meter"></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Опыт и образование -->
-<section class="experience">
+  <section id="experience">
     <div class="container">
-        <h3>Опыт и образование</h3>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-year">2018-...</div>
-                <div class="timeline-content">
-                    <h4>Преподаватель\Промоутер | RCode</h4>
-                    <p>Обучение детей и подростков digital-навыкам в ведущей IT-школе. Разработка образовательных программ и менторство.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2025</div>
-                <div class="timeline-content">
-                    <h4>Университет имени Ф. Скорины</h4>
-                    <p>Факультет прикладной математики и физики. Углубленное изучение алгоритмов, мат.моделирования и AI.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2019</div>
-                <div class="timeline-content">
-                    <h4>Торгово-Экономический колледж</h4>
-                    <p>Специальность "Программное обеспечение информационных технологий". Базовое техническое образование.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2017-2018</div>
-                <div class="timeline-content">
-                    <h4>Веб-разработчик | Фриланс</h4>
-                    <p>Коммерческая разработка и поддержка сайтов. Первые шаги в IT и веб-разработке.</p>
-                </div>
-            </div>
+      <div class="section-head">
+        <span class="eyebrow">03. хронология</span>
+        <h2>Опыт и образование</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2018 — н.в.</div>
+          <div class="timeline-content">
+            <h4>Преподаватель / промоутер — RCode</h4>
+            <p>Обучение детей и подростков digital-навыкам в ведущей IT-школе. Разработка образовательных программ и менторство.</p>
+          </div>
         </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-content">
+            <h4>Университет имени Ф. Скорины</h4>
+            <p>Факультет прикладной математики и физики. Углублённое изучение алгоритмов, мат. моделирования и AI.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2019</div>
+          <div class="timeline-content">
+            <h4>Торгово-экономический колледж</h4>
+            <p>Специальность «Программное обеспечение информационных технологий». Базовое техническое образование.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2017 — 2018</div>
+          <div class="timeline-content">
+            <h4>Веб-разработчик — фриланс</h4>
+            <p>Коммерческая разработка и поддержка сайтов. Первые шаги в IT и веб-разработке.</p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
   <!-- Проекты -->
-  <section class="projects">
+  <section id="projects">
     <div class="container">
-      <h3>Мои проекты</h3>
-      <div class="carousel">
-        <div class="carousel-track">
-          <div class="project-card">
-            <div class="video-container">
-              <div class="youtube-wrapper">
-                <iframe 
-                  src="https://www.youtube.com/embed/NvbaxrECrS0?autoplay=1&mute=1&loop=1ч" 
-                  title="Голосовой помощник Тони Старк"
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-            <h4>Голосовой помощник "Тони Старк"</h4>
-            <p>Система управления компьютером и устройствами через голосовые команды. Интеграция ESP32 + Python. Распознавание речи, автоматизация задач, управление умным домом.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">С++</span>
-              <span class="tech-tag">ESP32</span>
-              <span class="tech-tag">Speech Recognition</span>
-              <span class="tech-tag">IoT</span>
-            </div>
+      <div class="section-head">
+        <span class="eyebrow">04. работы</span>
+        <h2>Мои проекты</h2>
+        <p>Пять законченных вещей — от голосового ассистента до умного дома.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="youtube-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/NvbaxrECrS0?autoplay=1&mute=1&loop=1&playlist=NvbaxrECrS0"
+              title="Голосовой помощник Тони Старк"
+              loading="lazy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
           </div>
-          <div class="project-card">
-            <div class="video-container">
-              <div class="youtube-wrapper">
-                <iframe 
-                  src="https://www.youtube.com/embed/CpmyxvPN8iM?autoplay=1&mute=1&loop=1ч" 
-                  title="Принт индивидуального заказа"
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-            <h4>Заказ индивидуального принта для гаджета</h4>
-            <p>Доработка модуля для WP</p>
-            <div class="project-tech">
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">PHP</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="video-container">
-              <div class="youtube-wrapper">
-                <iframe 
-                  src="https://www.youtube.com/embed/RB4o8fXBtw8?autoplay=1&mute=1&loop=1" 
-                  title="Система Умный дом - демонстрация"
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-            <h4>Умный дом GuardianHome</h4>
-            <p>Комплексная система умного дома с RFID доступом, распознаванием лиц через OpenCV и Telegram-ботом для управления. Отслеживание статуса пользователей в реальном времени.</p>
-            <div class="project-tech">
-              <span class="tech-tag">ESP32</span>
-              <span class="tech-tag">OpenCV</span>
-              <span class="tech-tag">С++</span>
-              <span class="tech-tag">Dock</span>
-              <span class="tech-tag">Raspery PI 5</span>
-              <span class="tech-tag">cloudflare</span>
-              <span class="tech-tag">Telegram Bot</span>
-              <span class="tech-tag">RFID</span>
-              <span class="tech-tag">Python</span>
-            </div>
-          </div>
-            <div class="project-card">
-            <div class="video-container">
-              <div class="youtube-wrapper">
-                <iframe 
-                  src="https://www.youtube.com/embed/0sjugniwaKg?autoplay=1&mute=1&loop=1" 
-                  title="Site JayRay"
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-            <h4>Сайт с ЛК для игрового проекта JayRay</h4>
-            <p>Разработка сайта с личным кабинетом с эквайрингом для игры SA:MP</p>
-            <div class="project-tech">
-              <span class="tech-tag">PHP</span>
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JS</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="video-container">
-              <div class="youtube-wrapper">
-                <iframe 
-                  src="https://www.youtube.com/embed/PTQa4s1TOl0?autoplay=1&mute=1&loop=1" 
-                  title="Flappa bird c# Unity"
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-                </iframe>
-              </div>
-            </div>
-            <h4>Floppa Bird</h4>
-            <p>Аналог игры Flappy Bird сделанной в Unity на ЯП c#</p>
-            <div class="project-tech">
-              <span class="tech-tag">Unity</span>
-              <span class="tech-tag">C#</span>
-            </div>
+          <h4>Голосовой помощник «Тони Старк»</h4>
+          <p>Система управления компьютером и устройствами через голосовые команды. Интеграция ESP32 + Python. Распознавание речи, автоматизация задач, управление умным домом.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">ESP32</span>
+            <span class="tech-tag">Speech Recognition</span>
+            <span class="tech-tag">IoT</span>
           </div>
         </div>
-        <button class="carousel-btn prev">‹</button>
-        <button class="carousel-btn next">›</button>
+
+        <div class="project-card">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="youtube-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/CpmyxvPN8iM?autoplay=1&mute=1&loop=1&playlist=CpmyxvPN8iM"
+              title="Принт индивидуального заказа"
+              loading="lazy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <h4>Заказ индивидуального принта для гаджета</h4>
+          <p>Доработка модуля для WordPress под индивидуальный заказ принта.</p>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">WordPress</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="youtube-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/RB4o8fXBtw8?autoplay=1&mute=1&loop=1&playlist=RB4o8fXBtw8"
+              title="Система Умный дом — демонстрация"
+              loading="lazy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <h4>Умный дом GuardianHome</h4>
+          <p>Комплексная система умного дома с RFID-доступом, распознаванием лиц через OpenCV и Telegram-ботом для управления. Отслеживание статуса пользователей в реальном времени.</p>
+          <div class="project-tech">
+            <span class="tech-tag">ESP32</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Raspberry Pi 5</span>
+            <span class="tech-tag">Cloudflare</span>
+            <span class="tech-tag">Telegram Bot</span>
+            <span class="tech-tag">RFID</span>
+            <span class="tech-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="youtube-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/0sjugniwaKg?autoplay=1&mute=1&loop=1&playlist=0sjugniwaKg"
+              title="Site JayRay"
+              loading="lazy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <h4>Сайт с личным кабинетом для игрового проекта JayRay</h4>
+          <p>Разработка сайта с личным кабинетом и эквайрингом для игрового сервера SA:MP.</p>
+          <div class="project-tech">
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="corner tl"></span><span class="corner br"></span>
+          <div class="youtube-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/PTQa4s1TOl0?autoplay=1&mute=1&loop=1&playlist=PTQa4s1TOl0"
+              title="Floppa Bird, C# Unity"
+              loading="lazy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <h4>Floppa Bird</h4>
+          <p>Аналог игры Flappy Bird, сделанный в Unity на C#.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">C#</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Контакты -->
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
-      <h3>Контакты</h3>
-      <ul>
-        <li>GitHub: <a href="https://github.com/GravityNone" target="_blank">github.com/GravityNone</a></li>
-        <li>Telegram: <a href="https://t.me/chief_keef228" target="_blank">@chief_keef228</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/naos" target="_blank">linkedin.com/in/maxim-maximov</a></li>
+      <div class="section-head" style="margin-bottom: 0;">
+        <span class="eyebrow">05. на связи</span>
+        <h2>Давайте работать вместе</h2>
+        <p>Открыт к предложениям по full-stack и IoT-разработке — напишите, куда удобнее.</p>
+      </div>
+      <ul class="contact-list">
+        <li><a href="https://github.com/GravityNone" target="_blank"><i class="fab fa-github"></i> github.com/GravityNone</a></li>
+        <li><a href="https://t.me/chief_keef228" target="_blank"><i class="fab fa-telegram"></i> @chief_keef228</a></li>
+        <li><a href="https://www.linkedin.com/in/naos" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/naos</a></li>
       </ul>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2025 Максим Максимов. Все права защищены.</p>
+      <p>© 2026 Максим Филиппов. Все права защищены.</p>
     </div>
   </footer>
 
-  <!-- Скрипты -->
-  <script src="assets/js/main.js"></script>
   <script>
     new Typed('#typed', {
-      strings: ['Full-stack разработчик', 'Создатель IoT-проектов', 'Веб-разработчик', 'Python & JS Enthusiast'],
+      strings: ['Full-stack разработчик', 'Создатель IoT-проектов', 'Веб-разработчик', 'Python &amp; JS Enthusiast'],
       typeSpeed: 50,
       backSpeed: 25,
       loop: true
     });
+
+    // Мобильное меню
+    const nav = document.getElementById('siteNav');
+    const toggle = document.getElementById('navToggle');
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('.nav-links a, .nav-cta').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      });
+    });
+
+    // Заполнение шкал навыков
+    document.querySelectorAll('.skill-card').forEach(card => {
+      const level = parseInt(card.dataset.level, 10);
+      const segments = 10;
+      const filled = Math.round((level / 100) * segments);
+      const meter = card.querySelector('.meter');
+      for (let i = 0; i < segments; i++) {
+        const seg = document.createElement('i');
+        if (i < filled) seg.classList.add('on');
+        meter.appendChild(seg);
+      }
+    });
   </script>
-  <script>
-  const track = document.querySelector('.carousel-track');
-  const slides = Array.from(track.children);
-  const nextBtn = document.querySelector('.carousel-btn.next');
-  const prevBtn = document.querySelector('.carousel-btn.prev');
-  let index = 0;
-
-  function updateCarousel() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  nextBtn.addEventListener('click', () => {
-    index = (index + 1) % slides.length;
-    updateCarousel();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    index = (index - 1 + slides.length) % slides.length;
-    updateCarousel();
-  });
-</script>
-<script>
-document.querySelectorAll('.video-container').forEach(container => {
-  const video = container.querySelector('video');
-  const btn = container.querySelector('.video-sound-btn');
-
-  btn.addEventListener('click', () => {
-    if (video.muted) {
-      video.muted = false;
-      video.play(); // принудительный запуск со звуком
-      btn.innerHTML = '<i class="fas fa-volume-up"></i>';
-      btn.setAttribute('aria-label', 'Выключить звук');
-    } else {
-      video.muted = true;
-      btn.innerHTML = '<i class="fas fa-volume-mute"></i>';
-      btn.setAttribute('aria-label', 'Включить звук');
-    }
-  });
-});
-</script>
 </body>
 </html>
