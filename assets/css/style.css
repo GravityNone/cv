@@ -304,6 +304,46 @@ section:last-of-type { border-bottom: none; }
 }
 .meter i.on { background: var(--accent); }
 
+.ai-panel {
+  margin-top: 2rem;
+  background: linear-gradient(180deg, var(--surface-hi), var(--surface));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+}
+
+.ai-panel-head h3 { font-size: 1.2rem; margin: 0.35rem 0 0.35rem; }
+.ai-panel-head p { color: var(--muted); font-size: 0.9rem; margin: 0 0 1.4rem; }
+
+.ai-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.ai-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.9rem 1rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.ai-item-label {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ai-item-label i { color: var(--amber); }
+.ai-item-desc { color: var(--muted); font-size: 0.8rem; }
+
+.ai-panel-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
 /* ==========================================================
    ОПЫТ / ОБРАЗОВАНИЕ
    ========================================================== */
@@ -353,17 +393,19 @@ section:last-of-type { border-bottom: none; }
 /* ==========================================================
    ПРОЕКТЫ
    ========================================================== */
+#projects .container { max-width: 1320px; }
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 2rem;
 }
 
 .project-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 1rem;
+  padding: 1.1rem;
   position: relative;
 }
 
@@ -379,6 +421,7 @@ section:last-of-type { border-bottom: none; }
   overflow: hidden;
   margin-bottom: 1rem;
   background: #000;
+  cursor: zoom-in;
 }
 .youtube-wrapper iframe {
   position: absolute;
@@ -386,7 +429,82 @@ section:last-of-type { border-bottom: none; }
   width: 100%;
   height: 100%;
   border: none;
+  pointer-events: none;
 }
+
+.expand-hint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(11, 18, 32, 0);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  z-index: 2;
+}
+.youtube-wrapper:hover .expand-hint,
+.youtube-wrapper:focus-visible .expand-hint {
+  opacity: 1;
+  background: rgba(11, 18, 32, 0.35);
+}
+.expand-hint i { font-size: 1rem; }
+
+/* Лайтбокс для увеличенного просмотра видео */
+.video-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 10, 18, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+.video-lightbox.open { display: flex; }
+
+.video-lightbox-inner {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+}
+
+.video-lightbox-frame {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #000;
+}
+.video-lightbox-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-lightbox-close {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--text);
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.video-lightbox-close:hover { border-color: var(--accent); color: var(--accent); }
 
 .project-card h4 { font-size: 1.05rem; margin-bottom: 0.5rem; }
 .project-card p { color: var(--muted); font-size: 0.9rem; margin: 0; }
@@ -458,6 +576,9 @@ footer {
 
 @media (max-width: 640px) {
   section { padding: 3.25rem 0; }
+  .projects-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .video-lightbox { padding: 1rem; }
+  .video-lightbox-close { top: -2.75rem; }
   .nav-links, .nav-cta { display: none; }
   .nav-toggle { display: block; }
   .site-nav.open .nav-links {
